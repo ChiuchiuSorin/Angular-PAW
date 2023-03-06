@@ -1,0 +1,13 @@
+<div class="advice">
+    <h2 class="title">{{informations[infoId].title}}</h2>
+
+    <div class="content">
+        <pre>
+        {{informations[infoId].content}}
+        </pre>
+    </div>
+    <div class="control">
+        <button class="control-button" mat-raised-button (click)="goPreviously()">Previous</button>
+        <button class="control-button" mat-raised-button (click)="goNext()">Next</button>
+    </div>
+</div>

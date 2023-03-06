@@ -1,0 +1,12 @@
+<div class="donation-dialog">
+    <h1 mat-dialog-title>Felicitari pentru decizia de a dona!</h1>
+    <div mat-dialog-content>
+        <p>Inainte de a confirma, asigura-te ca ora selectata este cea dorita</p>
+        <p>Data: {{data.date.date | date:'EEEE dd-MM-y'}}</p>
+        <h3>Ora: {{data.date.date | date:'HH:mm'}}</h3>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button [mat-dialog-close]="false" (click)="onCancel()">Mai tarziu</button>
+        <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="onAccept()">Sunt pregatit!</button>
+    </div>
+</div>

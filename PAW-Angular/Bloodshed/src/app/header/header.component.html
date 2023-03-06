@@ -1,0 +1,57 @@
+<mat-toolbar class="top">
+    <span class="title">Bloodshed</span>
+    <span class="image">
+        <img src="assets\resources\images\output-onlinepngtools.png" alt="Snow" style="width:100%;">
+    </span>
+    <span>
+        <button class="userButton" mat-icon-button [matMenuTriggerFor]="userMenu">
+            <mat-icon class="icon">account_circle</mat-icon>
+        </button>
+
+        <mat-menu #userMenu="matMenu" xPosition="after" yPosition="below">
+            <ng-template matMenuContent>
+                <div *ngIf="logged; then thenBlock; else elseBlock"></div>
+                <ng-template #thenBlock>
+                    <a mat-menu-item routerLink="/profile">Detalii cont</a>
+                    <button mat-menu-item (click)="logout()">Logout</button>
+                </ng-template>
+                <ng-template #elseBlock>
+                    <button routerLink="/login" mat-menu-item>Log in</button>
+                    <button routerLink="/register" mat-menu-item>Register</button>
+                </ng-template>
+            </ng-template>
+        </mat-menu>
+    </span>
+</mat-toolbar>
+
+
+<mat-toolbar color="warn" class="navbar">
+    <span class="menu_item">
+        <button class="dropDownButton" mat-icon-button [matMenuTriggerFor]="dropdownMenu">
+            <span>Home</span>
+            <mat-icon class="home_icon">arrow_drop_down</mat-icon>
+        </button>
+
+        <mat-menu #dropdownMenu="matMenu" xPosition="before" yPosition="below">
+            <ng-template matMenuContent>
+                <a mat-menu-item routerLink="/despre-noi">Despre noi</a>
+                <a mat-menu-item routerLink="/sfatul-medicului/0" [matMenuTriggerFor]="subMenu">Informatii utile</a>
+                <a mat-menu-item routerLink="/proces">Despre proces</a>
+            </ng-template>
+        </mat-menu>
+        <mat-menu #subMenu="matMenu" xPosition="after" yPosition="below">
+            <ng-template matMenuContent>
+                <a mat-menu-item routerLink="/sfatul-medicului/0">Recmoandari generale</a>
+                <a mat-menu-item routerLink="/sfatul-medicului/1">Criterii de admisibilitate</a>
+                <a mat-menu-item routerLink="/sfatul-medicului/2">Inainte de donare</a>
+                <a mat-menu-item routerLink="/sfatul-medicului/3">De ce sa donezi?</a>
+            </ng-template>
+        </mat-menu>
+    </span>
+    <span class="menu_item">
+        <a mat-button routerLink="/donations"><span>Donatii</span></a>
+    </span>
+    <span class="menu_item">
+        <a mat-button routerLink="/statistics"><span>Statistici</span></a>
+    </span>
+</mat-toolbar>

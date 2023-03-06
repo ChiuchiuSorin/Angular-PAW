@@ -1,0 +1,30 @@
+.flex-container {
+    display: flex;
+    height: 120%;
+    justify-content: center;
+    background: antiquewhite;
+}
+
+mat-form-field {
+    width: 450px;
+}
+
+.left-column {
+    float: left;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.right-column {
+    float: right;
+    margin-left: 40px;
+    margin-top:40px;
+}
+
+button {
+    width: 300px;
+}
+
+.center-column {
+    align-self: center;
+}

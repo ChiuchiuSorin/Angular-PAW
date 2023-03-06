@@ -1,0 +1,76 @@
+<div class="flex-container">
+    <form #registerForm="ngForm" (ngSubmit)="register()" novalidate>
+
+        <div class="left-column">
+            <mat-form-field appearance="outline">
+                <mat-label>Username</mat-label>
+                <input matInput #username="ngModel" name="username" type="text" required [(ngModel)]="user.username" />
+            </mat-form-field>
+            <br>
+    
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput #password="ngModel" name="password" type="password" required [(ngModel)]="user.password" />
+            </mat-form-field>
+            <br>
+        </div>
+        
+        <div class="right-column">
+            <mat-form-field appearance="outline">
+                <mat-label>Nume</mat-label>
+                <input matInput #nume="ngModel" name="nume" type="text" required [(ngModel)]="userDetails.nume" />
+            </mat-form-field>
+            <br>
+            
+            <mat-form-field appearance="outline">
+                <mat-label>Prenume</mat-label>
+                <input matInput #prenume="ngModel" name="prenume" type="text" required [(ngModel)]="userDetails.prenume" />
+            </mat-form-field>
+            <br>
+            
+            <mat-form-field appearance="outline">
+                <mat-label>Data nasterii</mat-label>
+                <input matInput #dataNasterii="ngModel" name="dataNasterii" type="date" required [(ngModel)]="userDetails.data_nasterii" />
+            </mat-form-field>
+            <br>
+            
+            <mat-form-field appearance="outline">
+                <mat-label>Grupa sanguina</mat-label>
+                <mat-select #grupaSange="ngModel" name="grupaSange" required [(ngModel)]="userDetails.grupaSange">
+                    <mat-option value="0">0</mat-option>
+                    <mat-option value="A">A</mat-option>
+                    <mat-option value="B">B</mat-option>
+                    <mat-option value="AB">AB</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <br>
+            
+            <mat-form-field appearance="outline">
+                <mat-label>Telefon</mat-label>
+                <input matInput #telefon="ngModel" name="telefon" type="text" required [(ngModel)]="userDetails.telefon" />
+            </mat-form-field>
+            <br>
+            
+            <mat-form-field appearance="outline">
+                <mat-label>Inaltime</mat-label>
+                <input matInput #inaltime="ngModel" name="inaltime" type="number" required [(ngModel)]="userDetails.inaltime" />
+            </mat-form-field>
+            <br>
+            
+            <mat-form-field appearance="outline">
+                <mat-label>Greutate</mat-label>
+                <input matInput #greutate="ngModel" name="greutate" type="number" required [(ngModel)]="userDetails.greutate" />
+            </mat-form-field>
+            <br>
+            
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput #email="ngModel" name="email" type="text" [(ngModel)]="userDetails.email" />
+            </mat-form-field>
+            <br>
+            <div class="center-column">
+                <button mat-raised-button class="button" color="warn" type="submit">Register</button>
+            </div>
+        </div>
+    </form>
+</div>

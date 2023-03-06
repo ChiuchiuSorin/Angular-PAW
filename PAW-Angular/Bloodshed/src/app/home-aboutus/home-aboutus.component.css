@@ -1,0 +1,20 @@
+.about-us {
+    padding-top: 100px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-us-img {
+    width: 750px;
+}
+
+.text {
+    height: auto;
+    background-color: #00303010;
+    border-color: rgb(243, 222, 104);
+    padding: 5px 20px 5px 20px;
+    border-radius: 22px;
+    margin-right: 40px;
+    border-left-style: groove;
+    border-bottom-style: groove;
+}

@@ -1,0 +1,31 @@
+.statistic-type {
+    margin: auto;
+}
+
+.statistic-title {
+    font-size: 24px;
+}
+
+.statistic-title-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.statistic-content {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+}
+
+.list-info {
+    padding: 15px;
+    width: 500px;
+    height: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 350px;
+}

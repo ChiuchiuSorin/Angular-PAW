@@ -1,0 +1,98 @@
+<div class="statistic-title-container">
+    <span class="statistic-title">Choose your statistic</span>
+</div>
+<div class="statistic-type">
+    <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Age">
+            <div class="statistic-content">
+                <mat-list>
+
+                    <mat-list-item>
+                        <div class="list-info">
+                            <label>Donatori de varsta frageda ({{ageStats[0].name}}): </label>
+                            <span>{{ageStats[0].number}} ({{ageStats[0].percentage}}%)</span> 
+                        </div>
+                    </mat-list-item>
+
+                    <mat-list-item>
+                        <div class="list-info">
+                            <label>Donatori de varsta medie ({{ageStats[1].name}}): </label>
+                            <span>{{ageStats[1].number}} ({{ageStats[1].percentage}}%)</span>
+                        </div>
+                    </mat-list-item>
+
+                    <mat-list-item>
+                        <div class="list-info">
+                            <label>Donatori de varsta inaintata ({{ageStats[2].name}}): </label>
+                            <span>{{ageStats[2].number}} ({{ageStats[2].percentage}}%)</span>
+                        </div>
+                    </mat-list-item>
+
+                </mat-list>
+            </div>
+        </mat-tab>
+        <mat-tab label="Blood Type">
+            <div class="statistic-content">
+                <mat-list>
+
+                    <mat-list-item>
+                        <div class="list-info">
+                            <label>{{bloodTypeStats[0].name}}: </label>
+                            <span>{{bloodTypeStats[0].number}} ({{bloodTypeStats[0].percentage}}%)</span> 
+                        </div>
+                    </mat-list-item>
+
+                    <mat-list-item>
+                        <div class="list-info">
+                            <label>{{bloodTypeStats[1].name}}: </label>
+                            <span>{{bloodTypeStats[1].number}} ({{bloodTypeStats[1].percentage}}%)</span>
+                        </div>
+                    </mat-list-item>
+
+                    <mat-list-item>
+                        <div class="list-info">
+                            <label>{{bloodTypeStats[2].name}}: </label>
+                            <span>{{bloodTypeStats[2].number}} ({{bloodTypeStats[2].percentage}}%)</span>
+                        </div>
+                    </mat-list-item>
+
+                    <mat-list-item>
+                        <div class="list-info">
+                            <label>{{bloodTypeStats[3].name}}: </label>
+                            <span>{{bloodTypeStats[3].number}} ({{bloodTypeStats[3].percentage}}%)</span>
+                        </div>
+                    </mat-list-item>
+
+                </mat-list>
+            </div>
+        </mat-tab>
+        <mat-tab label="Donation Status">
+            <div class="statistic-content">
+                <mat-list>
+
+                    <mat-list-item>
+                        <div class="list-info">
+                            <label>{{donationStatusStats[0].name}}: </label>
+                            <span>{{donationStatusStats[0].number}} ({{donationStatusStats[0].percentage}}%)</span> 
+                        </div>
+                    </mat-list-item>
+
+                    <mat-list-item>
+                        <div class="list-info">
+                            <label>{{donationStatusStats[1].name}}: </label>
+                            <span>{{donationStatusStats[1].number}} ({{donationStatusStats[1].percentage}}%)</span>
+                        </div>
+                    </mat-list-item>
+
+                    <mat-list-item>
+                        <div class="list-info">
+                            <label>{{donationStatusStats[2].name}}: </label>
+                            <span>{{donationStatusStats[2].number}} ({{donationStatusStats[2].percentage}}%)</span>
+                        </div>
+                    </mat-list-item>
+
+                </mat-list>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>

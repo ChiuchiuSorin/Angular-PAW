@@ -1,0 +1,24 @@
+<p class="rewards-introduction">
+    Aici poti achizitiona produse pe baza punctelor acumulate prin donarea de sange!
+</p>
+
+<div fxLayout="row wrap">
+    <div fxFlex="25%" *ngFor="let reward of rewards">
+
+        <mat-card class="my-card">
+            <mat-card-header>
+                <mat-card-title>{{reward.name}}</mat-card-title>
+                <mat-card-subtitle>Cost: {{reward.cost}} PUNCTE</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="{{reward.imageUrl}}" alt="{{reward.name}}">
+            <mat-card-content>
+                <hr>
+                <p class="card-content">{{reward.description}}</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button color="warn">BUY</button>
+            </mat-card-actions>
+        </mat-card>
+
+    </div>
+</div>

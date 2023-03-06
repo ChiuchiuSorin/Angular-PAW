@@ -1,0 +1,117 @@
+:host {
+    /* // Ensures the host itself stacks the elements in a column */
+    width: 100%;
+    /*// Enables a narrow centering [line 11]*/
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+div {
+    /* // Center narrow content */
+    width: 700px;
+    height: auto;
+    margin: auto;
+
+    /* // Space between elements
+    // Notice that I don't use `margin:` as this would override the above `margin: auto` */
+
+
+    /* // Use Flexbox to center enclosed elements (icons) */
+    display: inline-flex;
+
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+    /* Pretty corners */
+}
+
+div#not-img {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    min-height: 240px;
+}
+
+div.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: cursive;
+    font-size: larger;
+    background: radial-gradient(rgb(255, 51, 51),
+            rgb(51, 122, 255)) fixed;
+    background: conic-gradient(rgb(255, 51, 51),
+            rgb(51, 105, 255),
+            rgb(255, 51, 51)) fixed;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+div i {
+    font-size: 30px;
+}
+
+/* // Resizes the Icons
+
+    // Gradual "Color" Change via Opacity */
+div.one {
+    background-color: #00000010;
+
+}
+
+div.two {
+    background-color: #00000020;
+}
+
+div.three {
+    min-height: 500px;
+}
+
+div.four {
+    background-color: #00000010;
+
+}
+
+
+div.six {
+    background-color: #00000020;
+}
+
+/* // IF adding icons, icons should be white for visible contrast */
+
+div.eight {
+    background-color: #00000010;
+}
+
+div.nine {
+    min-height: 500px;
+}
+
+.left-arrow {
+    width: 175px;
+    position: absolute;
+    left: 1200px;
+    transform: rotate(-40deg);
+}
+
+.right-arrow {
+    width: 175px;
+    position: absolute;
+    left: 385px;
+    transform: rotate(-40deg);
+}
+
+.down-arrow {
+    width: 175px;
+    position: absolute;
+}
+
+#stiai-ca {
+    text-align: center;
+    font-family: cursive;
+    font-size: larger;
+}

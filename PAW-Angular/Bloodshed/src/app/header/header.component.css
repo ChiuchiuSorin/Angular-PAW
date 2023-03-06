@@ -1,0 +1,50 @@
+.navbar {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.navbar span {
+    font-size: 20px;
+}
+
+.navbar .dropDownButton {
+    min-width: 64px;
+    width: 95px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+
+}
+
+.navbar span.menu_item {
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+.top {
+    height: 120px;
+    justify-content: center;
+}
+
+.image {
+    width: 400px
+}
+
+.userButton {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    display: flex;
+
+}
+
+.icon {
+    font-size: 50px;
+}
+
+.title {
+    position: absolute;
+    top: 30px;
+    font-size: xx-large;
+}

@@ -1,0 +1,59 @@
+<div class="flex-container">
+    <div class="user-details-column">
+        <mat-list>
+            <mat-list-item>
+                <div class="text-info-box">
+                    <label>Nume complet: </label>
+                    <span class="text-info">{{userDetails.nume}} {{userDetails.prenume}}</span>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div class="text-info-box">
+                    <label>Data nasterii: </label>
+                    <span class="text-info">{{userDetails.data_nasterii.getDate()}}/{{userDetails.data_nasterii.getMonth()}}/{{userDetails.data_nasterii.getFullYear()}}</span>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div class="text-info-box">
+                    <label>Grupa sanguina: </label>
+                    <span class="text-info">{{userDetails.grupaSange}}</span>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div class="text-info-box">
+                    <label>Telefon: </label>
+                    <span class="text-info">{{userDetails.telefon}}</span>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div class="text-info-box">
+                    <label>Email: </label>
+                    <span class="text-info">{{userDetails.email}}</span>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div class="text-info-box">
+                    <label>Inaltime: </label>
+                    <span class="text-info">{{userDetails.inaltime}} cm</span>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div class="text-info-box">
+                    <label>Greutate: </label>
+                    <span class="text-info">{{userDetails.greutate}} kg</span>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <button routerLink="/rewards" mat-raised-button color="warn"><span class="text-info">Go to rewards</span></button>
+                <button class="donation-history-button" routerLink="/donation-history" mat-raised-button color="warn"><span class="text-info">Go to donation history</span></button>
+            </mat-list-item>
+        </mat-list>
+    </div>
+    
+    <div class="user-image-column">
+        <picture>
+            <source srcset="../../assets/resources/images/user.png">
+            <img mat-card-image src="" alt="User Image">
+        </picture>
+    </div>
+</div>

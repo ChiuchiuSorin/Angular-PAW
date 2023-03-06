@@ -1,0 +1,44 @@
+.control {
+    display: flex;
+    justify-content: center;
+}
+
+.control-button {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.advice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 1350px;
+    height: 500px;
+    background-color: #00303010;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 22px;
+    background-image: url("/assets/resources/images/blood-donation-image.jpg");
+}
+
+pre {
+    font-family: cursive;
+    font-size: 17px;
+
+}
+
+.title {
+    font-size: x-large;
+
+}
+
+.advice {
+    margin-top: 40px;
+}
